@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_account.dir/tests/test_account.cpp.o -o test_account  -lgcov libbanking.a lib/libgtest_main.a lib/libgmock.a lib/libgtest.a -lgcov -lpthread

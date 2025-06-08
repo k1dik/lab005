@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ch1psik/lab005/build/cmake_install.cmake",
+		"/home/ch1psik/lab005/build/external/googletest/cmake_install.cmake",
+		"/home/ch1psik/lab005/build/external/googletest/googlemock/cmake_install.cmake",
+		"/home/ch1psik/lab005/build/external/googletest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

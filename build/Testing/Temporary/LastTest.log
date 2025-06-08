@@ -1,0 +1,35 @@
+Start testing: Jun 08 17:03 MSK
+----------------------------------------------------------
+Unable to find executable: /home/ch1psik/lab005/build/test_account
+1/2 Testing: test_account
+1/2 Test: test_account
+Command: ""
+Directory: /home/ch1psik/lab005/build
+"test_account" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_account" end time: Jun 08 17:03 MSK
+"test_account" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/ch1psik/lab005/build/test_transaction
+2/2 Testing: test_transaction
+2/2 Test: test_transaction
+Command: ""
+Directory: /home/ch1psik/lab005/build
+"test_transaction" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_transaction" end time: Jun 08 17:03 MSK
+"test_transaction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 08 17:03 MSK
