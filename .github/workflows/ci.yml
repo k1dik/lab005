@@ -1,38 +1,28 @@
-name: CMake Build and Test
+name: lab005 CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Install dependencies
-      run: sudo apt-get update && sudo apt-get install -y cmake g++ lcov
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y cmake g++ libgtest-dev
 
-    - name: Configure CMake
-      run: cmake -B build -S . -DCODE_COVERAGE=ON
-
-    - name: Build
-      run: cmake --build build -- -j
-
-    - name: Run tests
-      run: ctest --output-on-failure --test-dir build
-
-    - name: Generate coverage report
-      run: |
-        lcov --capture --directory build --output-file coverage.info
-        lcov --remove coverage.info '/usr/*' --output-file coverage.info
-        lcov --list coverage.info
-
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        files: coverage.info
-        fail_ci_if_error: true
+      - name: Build and test
+        run: |
+          cd /usr/src/gtest
+          sudo cmake .
+          sudo make
+          sudo cp *.a /usr/lib
+          cd $GITHUB_WORKSPACE
+          cmake .
+          make
+          ctest --output-on-failure

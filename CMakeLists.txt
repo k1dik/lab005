@@ -1,40 +1,22 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.10)
 project(lab005)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Включаем покрытие кода (gcc/clang)
-option(CODE_COVERAGE "Enable coverage reporting" ON)
-
-if(CODE_COVERAGE)
-    add_compile_options(--coverage -O0 -g)
-    link_libraries(gcov)
-endif()
-
-# Добавляем библиотеку banking
-add_library(banking
-    banking/Account.cpp
-    banking/Transaction.cpp
+add_library(banking STATIC
+    src/Account.cpp
+    src/Transaction.cpp
 )
-
-# Добавляем googletest (зависимость)
-include(FetchContent)
-FetchContent_Declare(
-    googletest
-    URL https://github.com/google/googletest/archive/refs/tags/release-1.14.0.zip
-)
-add_subdirectory(external/googletest)
 
 enable_testing()
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
 
-# Добавляем тесты
-add_executable(test_account tests/test_account.cpp)
-target_link_libraries(test_account PRIVATE banking gtest_main gmock)
+add_executable(tests
+    tests/test_account.cpp
+    tests/test_transaction.cpp
+)
 
-add_executable(test_transaction tests/test_transaction.cpp)
-target_link_libraries(test_transaction PRIVATE banking gtest_main gmock)
+target_link_libraries(tests banking ${GTEST_LIBRARIES} pthread)
 
-# Запуск тестов через CTest
-add_test(NAME test_account COMMAND test_account)
-add_test(NAME test_transaction COMMAND test_transaction)
+add_test(NAME banking_tests COMMAND tests)
