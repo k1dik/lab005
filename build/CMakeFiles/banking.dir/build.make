@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1463/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1468/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1463/bin/cmake -E rm -f
+RM = /snap/cmake/1468/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,44 +72,44 @@ include CMakeFiles/banking.dir/flags.make
 CMakeFiles/banking.dir/codegen:
 .PHONY : CMakeFiles/banking.dir/codegen
 
-CMakeFiles/banking.dir/banking/Account.cpp.o: CMakeFiles/banking.dir/flags.make
-CMakeFiles/banking.dir/banking/Account.cpp.o: /home/ch1psik/lab005/banking/Account.cpp
-CMakeFiles/banking.dir/banking/Account.cpp.o: CMakeFiles/banking.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ch1psik/lab005/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/banking.dir/banking/Account.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/banking.dir/banking/Account.cpp.o -MF CMakeFiles/banking.dir/banking/Account.cpp.o.d -o CMakeFiles/banking.dir/banking/Account.cpp.o -c /home/ch1psik/lab005/banking/Account.cpp
+CMakeFiles/banking.dir/src/Transaction.cpp.o: CMakeFiles/banking.dir/flags.make
+CMakeFiles/banking.dir/src/Transaction.cpp.o: /home/ch1psik/lab005/src/Transaction.cpp
+CMakeFiles/banking.dir/src/Transaction.cpp.o: CMakeFiles/banking.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ch1psik/lab005/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/banking.dir/src/Transaction.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/banking.dir/src/Transaction.cpp.o -MF CMakeFiles/banking.dir/src/Transaction.cpp.o.d -o CMakeFiles/banking.dir/src/Transaction.cpp.o -c /home/ch1psik/lab005/src/Transaction.cpp
 
-CMakeFiles/banking.dir/banking/Account.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/banking.dir/banking/Account.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ch1psik/lab005/banking/Account.cpp > CMakeFiles/banking.dir/banking/Account.cpp.i
+CMakeFiles/banking.dir/src/Transaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/banking.dir/src/Transaction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ch1psik/lab005/src/Transaction.cpp > CMakeFiles/banking.dir/src/Transaction.cpp.i
 
-CMakeFiles/banking.dir/banking/Account.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/banking.dir/banking/Account.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ch1psik/lab005/banking/Account.cpp -o CMakeFiles/banking.dir/banking/Account.cpp.s
+CMakeFiles/banking.dir/src/Transaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/banking.dir/src/Transaction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ch1psik/lab005/src/Transaction.cpp -o CMakeFiles/banking.dir/src/Transaction.cpp.s
 
-CMakeFiles/banking.dir/banking/Transaction.cpp.o: CMakeFiles/banking.dir/flags.make
-CMakeFiles/banking.dir/banking/Transaction.cpp.o: /home/ch1psik/lab005/banking/Transaction.cpp
-CMakeFiles/banking.dir/banking/Transaction.cpp.o: CMakeFiles/banking.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ch1psik/lab005/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/banking.dir/banking/Transaction.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/banking.dir/banking/Transaction.cpp.o -MF CMakeFiles/banking.dir/banking/Transaction.cpp.o.d -o CMakeFiles/banking.dir/banking/Transaction.cpp.o -c /home/ch1psik/lab005/banking/Transaction.cpp
+CMakeFiles/banking.dir/src/Account.cpp.o: CMakeFiles/banking.dir/flags.make
+CMakeFiles/banking.dir/src/Account.cpp.o: /home/ch1psik/lab005/src/Account.cpp
+CMakeFiles/banking.dir/src/Account.cpp.o: CMakeFiles/banking.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ch1psik/lab005/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/banking.dir/src/Account.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/banking.dir/src/Account.cpp.o -MF CMakeFiles/banking.dir/src/Account.cpp.o.d -o CMakeFiles/banking.dir/src/Account.cpp.o -c /home/ch1psik/lab005/src/Account.cpp
 
-CMakeFiles/banking.dir/banking/Transaction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/banking.dir/banking/Transaction.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ch1psik/lab005/banking/Transaction.cpp > CMakeFiles/banking.dir/banking/Transaction.cpp.i
+CMakeFiles/banking.dir/src/Account.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/banking.dir/src/Account.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ch1psik/lab005/src/Account.cpp > CMakeFiles/banking.dir/src/Account.cpp.i
 
-CMakeFiles/banking.dir/banking/Transaction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/banking.dir/banking/Transaction.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ch1psik/lab005/banking/Transaction.cpp -o CMakeFiles/banking.dir/banking/Transaction.cpp.s
+CMakeFiles/banking.dir/src/Account.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/banking.dir/src/Account.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ch1psik/lab005/src/Account.cpp -o CMakeFiles/banking.dir/src/Account.cpp.s
 
 # Object files for target banking
 banking_OBJECTS = \
-"CMakeFiles/banking.dir/banking/Account.cpp.o" \
-"CMakeFiles/banking.dir/banking/Transaction.cpp.o"
+"CMakeFiles/banking.dir/src/Transaction.cpp.o" \
+"CMakeFiles/banking.dir/src/Account.cpp.o"
 
 # External object files for target banking
 banking_EXTERNAL_OBJECTS =
 
-libbanking.a: CMakeFiles/banking.dir/banking/Account.cpp.o
-libbanking.a: CMakeFiles/banking.dir/banking/Transaction.cpp.o
+libbanking.a: CMakeFiles/banking.dir/src/Transaction.cpp.o
+libbanking.a: CMakeFiles/banking.dir/src/Account.cpp.o
 libbanking.a: CMakeFiles/banking.dir/build.make
 libbanking.a: CMakeFiles/banking.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ch1psik/lab005/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libbanking.a"

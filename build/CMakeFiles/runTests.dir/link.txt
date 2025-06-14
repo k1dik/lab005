@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/runTests.dir/test/AccountTest.cpp.o CMakeFiles/runTests.dir/test/TransactionTest.cpp.o -o runTests  libbanking.a /usr/lib/x86_64-linux-gnu/libgtest.a -lgtest_main -lpthread --coverage
