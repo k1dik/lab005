@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/ch1psik/lab005/src
 
 CXX_FLAGS = -std=gnu++17 --coverage -O0 -g
 
